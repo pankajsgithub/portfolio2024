@@ -91,7 +91,7 @@ section {
 /* } */
 
 .navbar a {
-    border: 1px solid thistle;
+    /* border: 1px solid thistle; */
     display: inline-block;
     font-size: 1.5rem;
     color: var(--text-color);
@@ -281,4 +281,39 @@ section {
 
 .btn:hover{
     box-shadow: none;
+}
+
+
+/* About Styling */
+
+.about {
+    border: '2px solid green';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
 }
