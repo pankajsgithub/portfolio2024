@@ -186,7 +186,7 @@ section {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
-    
+
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
     /* border: 5px solid aquamarine; */
@@ -280,7 +280,7 @@ section {
 
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: none;
 }
 
@@ -352,7 +352,7 @@ section {
     transition: 0.5s ease;
 }
 
-.skills-container .skills-box:hover{
+.skills-container .skills-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
@@ -377,7 +377,7 @@ section {
     background-color: var(--snd-bg-color);
 }
 
-.portfolio > h2 {
+.portfolio>h2 {
     margin-bottom: 4rem;
 }
 
@@ -519,4 +519,100 @@ section {
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--snd-bg-color);
+}
+
+/* BREAKPOINT */
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+        /* background: yellowgreen; */
+    }
+}
+
+@media (max-width:991px) {
+    .header {
+        padding: 2rem 3%;
+        /* background: chocolate; */
+    }
+
+    section {
+        padding: 10rem 3%;
+    }
+
+    .skills {
+        padding: 7rem;
+    }
+
+    .portfolio {
+        padding: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-content {
+        order: 2;
+    }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about-img img {
+        width: 90vw;
+        margin-top: 4rem;
+    }
+    .skills h2 {
+        margin-bottom: 3rem;
+    }
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 617px){
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+    .home-img img {
+        width: 80vw;
+    }
+    .about-img img {
+        width: 100vw;
+        margin-top: 4rem;
+    }
+}
+    
+@media (max-width: 450px){
+    html {
+        font-size: 50%;
+    }
+    .contact form .input-box input {
+        width: 100%;
+    }
 }
