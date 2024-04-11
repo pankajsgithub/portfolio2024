@@ -1,7 +1,7 @@
 var typed = new Typed('.multiple-text', {
   strings: ["Web Developer^3000", "Python 3 Programmer", "MERN Stack Developer"],
   typeSpeed: 100,
-  backSpeed: 100,
+  backSpeed: 60,
   backDelay: 1000,
   loop: true
 });
@@ -16,7 +16,6 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx_bx-x')
   navbar.classList.toggle('active')
 }
-
 
 // Section Scroll Control
 
@@ -57,5 +56,3 @@ ScrollReveal().reveal('.home-content, heading', { origin: 'top' })
 ScrollReveal().reveal('.home-img, .skills-container, .portfolio-box , .contact form ', { origin: 'button' })
 ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' })
 ScrollReveal().reveal('.home-contact p, .about', { origin: 'right' })
-
-

@@ -122,6 +122,21 @@ section {
     color: var(--text-color);
 }
 
+::-webkit-scrollbar{
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: var(--snd-bg-color);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 0.5rem;
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #0ef;
+}
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
